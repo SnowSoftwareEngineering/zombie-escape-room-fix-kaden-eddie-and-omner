@@ -1,6 +1,7 @@
 ﻿using System;
 
-class Program
+namespace ZombieEscapeRoom;
+public class Program
 {
     static void Main(string[] args)
     {
@@ -64,18 +65,26 @@ class Program
         // First Password
         if (!CheckPuzzleResult(GetFirst(), 666, "GetFirst"))
             return false;
+        Console.WriteLine("You succesfully passed through the first door, hurry or you might get caught!! (Press enter to continue)");
+        Console.ReadLine();
 
         // Second Password
         if (!CheckPuzzleResult(GetSecond(), 258, "GetSecond"))
             return false;
+        Console.WriteLine("You succesfully passed through the second door, need to take a break yet!! (Press enter to continue)");
+        Console.ReadLine();
 
         // Third Password
         if (!CheckPuzzleResult(GetThird(), 797, "GetThird"))
             return false;
+        Console.WriteLine("You succesfully passed through the third door. Watch out, here they come!! (Press enter to continue)");
+        Console.ReadLine();
 
         // Fourth Password
         if (!CheckPuzzleResult(GetFourth(), 861, "GetFourth"))
             return false;
+        Console.WriteLine("You succesfully passed through the fourth door!! (Press enter to continue)");
+        Console.ReadLine();
 
         // All puzzles solved successfully
         Console.WriteLine("\nYou have successfully solved all puzzles in Room #1.");
@@ -83,7 +92,7 @@ class Program
     }
 
     // Helper function to check if the puzzle result matches the expected value
-    static bool CheckPuzzleResult(int result, int expected, string functionName)
+    public static bool CheckPuzzleResult(int result, int expected, string functionName)
     {
         if (result != expected)
         {
