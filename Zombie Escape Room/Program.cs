@@ -112,7 +112,7 @@ public class Program
     }
 
     // Puzzle 1: Multiplication (GetFirst)
-    static int GetFirst()
+    public static int GetFirst()
     {
         int num1 = 222;
         int num2 = 3;
@@ -120,7 +120,7 @@ public class Program
     }
 
     // Puzzle 2: Division (GetSecond)
-    static int GetSecond()
+    public static int GetSecond()
     {
         int num1 = 516;
         int num2 = 2;
@@ -128,7 +128,7 @@ public class Program
     }
 
     // Puzzle 3: Addition (GetThird)
-    static int GetThird()
+    public static int GetThird()
     {
         int num1 = 97;
         int num2 = 0;
@@ -136,7 +136,7 @@ public class Program
     }
 
     // Puzzle 4: Subtraction (GetFourth)
-    static int GetFourth()
+    public static int GetFourth()
     {
         int num1 = 61;
         int num2 = 0;
