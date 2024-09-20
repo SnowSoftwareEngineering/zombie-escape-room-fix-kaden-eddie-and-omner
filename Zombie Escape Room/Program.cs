@@ -115,14 +115,14 @@ public class Program
     public static int GetFirst()
     {
         int num1 = 222;
-        int num2 = 3;
+        int num2 = 0;
         return num1 * num2; // Should return 666
     }
 
     // Puzzle 2: Division (GetSecond)
     public static int GetSecond()
     {
-        int num1 = 516;
+        int num1 = 56;
         int num2 = 2;
         return num1 / num2; // Should return 258
     }
